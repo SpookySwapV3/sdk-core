@@ -189,7 +189,7 @@ const BTTC_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0x9C8D29B9e02A22704dFC986C385b1eB298B83Acf',
   tickLensAddress: '0x07685F75c6172DB0Dd9a03Fcc3258d6Ade0F370d',
   swapRouter02Address: '0x5Cf0020FEc05770cadF64fe97a915f100d541869',
-  v1MixedRouteQuoterAddress: '0x4A1057E744bfA75fF063449dB580C447D9e39FdD'
+  v1MixedRouteQuoterAddress: '0x956927a62F4E6066e760560a86c305E81A38F0d3'
 }
 const FTM_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
@@ -199,7 +199,7 @@ const FTM_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x07F004c39b5628107860574F30902A995824f486',
   quoterAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
   swapRouter02Address: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
-  v1MixedRouteQuoterAddress: '0x20bD38350AA4629be2f090C8E31616601599a749'
+  v1MixedRouteQuoterAddress: '0x5F2C0cB92c064d54b2eA086327010aEA13B2fA01'
 }
 const EON_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
@@ -209,7 +209,7 @@ const EON_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x07F004c39b5628107860574F30902A995824f486',
   quoterAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
   swapRouter02Address: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
-  v1MixedRouteQuoterAddress: '0x7A0C53F7eb34C5BC8B01691723669adA9D6CB384'
+  v1MixedRouteQuoterAddress: '0xC87Bb454A49eaBcA632B80d5faF40CDBe410EeC2'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
