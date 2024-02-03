@@ -198,7 +198,8 @@ const FTM_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2',
   v3MigratorAddress: '0x07F004c39b5628107860574F30902A995824f486',
   quoterAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
-  swapRouter02Address: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8'
+  swapRouter02Address: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  v1MixedRouteQuoterAddress: '0x20bD38350AA4629be2f090C8E31616601599a749'
 }
 const EON_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
@@ -207,7 +208,8 @@ const EON_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2',
   v3MigratorAddress: '0x07F004c39b5628107860574F30902A995824f486',
   quoterAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
-  swapRouter02Address: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8'
+  swapRouter02Address: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  v1MixedRouteQuoterAddress: '0x7A0C53F7eb34C5BC8B01691723669adA9D6CB384'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
