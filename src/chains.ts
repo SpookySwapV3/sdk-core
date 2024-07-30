@@ -18,7 +18,8 @@ export enum ChainId {
   BASE = 8453,
   BIT_TORRENT_MAINNET = 199,
   FANTOM = 250,
-  EON = 7332
+  EON = 7332,
+  BERA_TESTNET = 80004
 }
 
 export const SUPPORTED_CHAINS = [
@@ -39,7 +40,8 @@ export const SUPPORTED_CHAINS = [
   ChainId.BASE_GOERLI,
   ChainId.BIT_TORRENT_MAINNET,
   ChainId.FANTOM,
-  ChainId.EON
+  ChainId.EON,
+  ChainId.BERA_TESTNET
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -54,5 +56,6 @@ export enum NativeCurrencyName {
   AVAX = 'AVAX',
   BTTC = 'BTTC',
   FTM = 'FTM',
-  EON = 'ZEN'
+  EON = 'ZEN',
+  BERA = 'BERA'
 }
