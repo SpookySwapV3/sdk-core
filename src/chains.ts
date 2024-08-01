@@ -19,7 +19,7 @@ export enum ChainId {
   BIT_TORRENT_MAINNET = 199,
   FANTOM = 250,
   EON = 7332,
-  BERA_TESTNET = 80004
+  BERA_TESTNET = 80084
 }
 
 export const SUPPORTED_CHAINS = [
