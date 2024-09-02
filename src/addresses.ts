@@ -39,7 +39,8 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BIT_TORRENT_MAINNET]: '0xee4bc42157cf65291ba2fe839ae127e3cc76f741',
   [ChainId.FANTOM]: '0x152eE697f2E276fA89E96742e9bB9aB1F2E61bE3',
   [ChainId.EON]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
-  [ChainId.BERA_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741'
+  [ChainId.BERA_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
+  [ChainId.GOAT_TESTNET]: '',
 }
 
 export const V2_FACTORY_INIT_HASH: AddressMap = {
@@ -47,7 +48,8 @@ export const V2_FACTORY_INIT_HASH: AddressMap = {
   [ChainId.BIT_TORRENT_MAINNET]: '0x143b7504e2b4eb34ed3cf725a14720c008dff8cd992e32c0eccd639c183ad602',
   [ChainId.FANTOM]: '0xcdf2deca40a0bd56de8e3ce5c7df6727e5b1bf2ac96f283fa9c4b3e6b42ea9d2',
   [ChainId.EON]: '0x143b7504e2b4eb34ed3cf725a14720c008dff8cd992e32c0eccd639c183ad602',
-  [ChainId.BERA_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b'
+  [ChainId.BERA_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
+  [ChainId.GOAT_TESTNET]: '',
 }
 
 export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
@@ -58,7 +60,8 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BIT_TORRENT_MAINNET]: '0x1be40073083d753f1eeFd87b03461221c35492C3',
   [ChainId.FANTOM]: '0x31F63A33141fFee63D4B26755430a390ACdD8a4d',
   [ChainId.EON]: '0xccEC4EF0228488636B6E8dF77D7d4211c87Ef255',
-  [ChainId.BERA_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883'
+  [ChainId.BERA_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
+  [ChainId.GOAT_TESTNET]: '',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -240,6 +243,17 @@ const BERA_TESTNET_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '0xe7005a4Fa0260022149772EA86449431B4A9e641'
 }
 
+const GOAT_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '',
+  tickLensAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  v3MigratorAddress: '',
+  quoterAddress: '',
+  swapRouter02Address: '',
+  v1MixedRouteQuoterAddress: ''
+}
+
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
@@ -260,7 +274,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BIT_TORRENT_MAINNET]: BTTC_ADDRESSES,
   [ChainId.FANTOM]: FTM_ADDRESSES,
   [ChainId.EON]: EON_ADDRESSES,
-  [ChainId.BERA_TESTNET]: BERA_TESTNET_ADDRESSES
+  [ChainId.BERA_TESTNET]: BERA_TESTNET_ADDRESSES,
+  [ChainId.GOAT_TESTNET]: GOAT_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
