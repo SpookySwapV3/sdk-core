@@ -62,5 +62,5 @@ export enum NativeCurrencyName {
   FTM = 'FTM',
   EON = 'ZEN',
   BERA = 'BERA',
-  S = 'S'
+  SONIC_TESNET = 'S'
 }
