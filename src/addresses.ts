@@ -41,6 +41,8 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.EON]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
   [ChainId.BERA_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
   [ChainId.GOAT_TESTNET]: '',
+  [ChainId.SONIC_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
+
 }
 
 export const V2_FACTORY_INIT_HASH: AddressMap = {
@@ -50,6 +52,7 @@ export const V2_FACTORY_INIT_HASH: AddressMap = {
   [ChainId.EON]: '0x143b7504e2b4eb34ed3cf725a14720c008dff8cd992e32c0eccd639c183ad602',
   [ChainId.BERA_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
   [ChainId.GOAT_TESTNET]: '',
+  [ChainId.SONIC_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
 }
 
 export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
@@ -62,6 +65,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.EON]: '0xccEC4EF0228488636B6E8dF77D7d4211c87Ef255',
   [ChainId.BERA_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
   [ChainId.GOAT_TESTNET]: '',
+  [ChainId.SONIC_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -254,6 +258,30 @@ const GOAT_TESTNET_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: ''
 }
 
+//   "v3CoreFactoryAddress": "0x7928a2c48754501f3a8064765ECaE541daE5c3E6",
+//   "multicall2Address":"0x96a7F0E4905F39508b17Faef5aC456C72a4E1319",
+//   "proxyAdminAddress":"0xD6fFB889fe82FBCF6141A75D97B1960b67603D79",
+//   "tickLensAddress":"0xbaA8353CC9d02733eF12f9556ed999521f6E554c",
+//   "nftDescriptorLibraryAddressV1_3_0":"0x0057CB6fE6a312AC29d60256299F2De425Af734d",
+//   "nonfungibleTokenPositionDescriptorAddressV1_3_0":"0x4237D0E559237AC718890EbC7698E5525DB48238",
+//   "descriptorProxyAddress":"0xaeE05d74c00c8aFCe2A39496FE22cEA3c7Adbc11",
+//   "nonfungibleTokenPositionManagerAddress":"0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2",
+//   "v3MigratorAddress":"0x07F004c39b5628107860574F30902A995824f486",
+//   "v3StakerAddress":"0x9c04f7a1506aBDDe1A3Bb8aB1a2Da520bDF79E68",
+//   "quoterV2Address":"0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92",
+//   "swapRouter02":"0x40F70B72796C30f355dF859B2c8F94f18c38AdF8"
+//    MixedRouteQuoterV1: 0xa7B257019fc65Be804fd5A2Aa2AFe64cBC9E7d37
+const SONIC_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
+  multicallAddress: '0x96a7F0E4905F39508b17Faef5aC456C72a4E1319',
+  tickLensAddress: '0xbaA8353CC9d02733eF12f9556ed999521f6E554c',
+  nonfungiblePositionManagerAddress: '0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2',
+  v3MigratorAddress: '0x07F004c39b5628107860574F30902A995824f486',
+  quoterAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
+  swapRouter02Address: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  v1MixedRouteQuoterAddress: '0xa7B257019fc65Be804fd5A2Aa2AFe64cBC9E7d37',
+}
+
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
@@ -276,6 +304,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.EON]: EON_ADDRESSES,
   [ChainId.BERA_TESTNET]: BERA_TESTNET_ADDRESSES,
   [ChainId.GOAT_TESTNET]: GOAT_TESTNET_ADDRESSES,
+  [ChainId.SONIC_TESTNET]: SONIC_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
