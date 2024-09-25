@@ -20,7 +20,7 @@ export enum ChainId {
   FANTOM = 250,
   EON = 7332,
   BERA_TESTNET = 80084,
-  GOAT_TESTNET = 2345,
+  // GOAT_TESTNET = 2345,
   SONIC_TESTNET = 64165
 }
 
@@ -44,7 +44,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.FANTOM,
   ChainId.EON,
   ChainId.BERA_TESTNET,
-  ChainId.GOAT_TESTNET,
+  // ChainId.GOAT_TESTNET,
   ChainId.SONIC_TESTNET,
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
