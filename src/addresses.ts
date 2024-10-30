@@ -40,7 +40,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.FANTOM]: '0x152eE697f2E276fA89E96742e9bB9aB1F2E61bE3',
   [ChainId.EON]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
   [ChainId.BERA_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
-  // [ChainId.GOAT_TESTNET]: '',
+  [ChainId.GOAT_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
   [ChainId.SONIC_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
 
 }
@@ -51,7 +51,7 @@ export const V2_FACTORY_INIT_HASH: AddressMap = {
   [ChainId.FANTOM]: '0xcdf2deca40a0bd56de8e3ce5c7df6727e5b1bf2ac96f283fa9c4b3e6b42ea9d2',
   [ChainId.EON]: '0x143b7504e2b4eb34ed3cf725a14720c008dff8cd992e32c0eccd639c183ad602',
   [ChainId.BERA_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
-  // [ChainId.GOAT_TESTNET]: '',
+  [ChainId.GOAT_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
   [ChainId.SONIC_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
 }
 
@@ -64,7 +64,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.FANTOM]: '0x31F63A33141fFee63D4B26755430a390ACdD8a4d',
   [ChainId.EON]: '0xccEC4EF0228488636B6E8dF77D7d4211c87Ef255',
   [ChainId.BERA_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
-  // [ChainId.GOAT_TESTNET]: '',
+  [ChainId.GOAT_TESTNET]: '0x6f29913E84f693F48E9576465589b778030345A2',
   [ChainId.SONIC_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
 }
 
@@ -247,16 +247,16 @@ const BERA_TESTNET_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '0xe7005a4Fa0260022149772EA86449431B4A9e641'
 }
 
-// const GOAT_TESTNET_ADDRESSES: ChainAddresses = {
-//   v3CoreFactoryAddress: '',
-//   multicallAddress: '',
-//   tickLensAddress: '',
-//   nonfungiblePositionManagerAddress: '',
-//   v3MigratorAddress: '',
-//   quoterAddress: '',
-//   swapRouter02Address: '',
-//   v1MixedRouteQuoterAddress: ''
-// }
+const GOAT_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2',
+  multicallAddress: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  tickLensAddress: '0x0D30331D462a30E344ee599B7483E313D63fD42A',
+  nonfungiblePositionManagerAddress: '0x60050E4a491b24ADF36Fe184f994dE985641c747',
+  v3MigratorAddress: '0x44FD0e3a5DcE52de0E8628993b99C7dcF7e372Db',
+  quoterAddress: '0x963eaDFE636AEdce3320391C133510593465F965',
+  swapRouter02Address: '0x2327f9A037C8C44744dCD6D135633DA466576D72',
+  v1MixedRouteQuoterAddress: '0x621071f64AEa3dF5B6E4C0ad060a95E36660a48F'
+}
 
 //   "v3CoreFactoryAddress": "0x7928a2c48754501f3a8064765ECaE541daE5c3E6",
 //   "multicall2Address":"0x96a7F0E4905F39508b17Faef5aC456C72a4E1319",
@@ -303,7 +303,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.FANTOM]: FTM_ADDRESSES,
   [ChainId.EON]: EON_ADDRESSES,
   [ChainId.BERA_TESTNET]: BERA_TESTNET_ADDRESSES,
-  // [ChainId.GOAT_TESTNET]: GOAT_TESTNET_ADDRESSES,
+  [ChainId.GOAT_TESTNET]: GOAT_TESTNET_ADDRESSES,
   [ChainId.SONIC_TESTNET]: SONIC_TESTNET_ADDRESSES,
 }
 
