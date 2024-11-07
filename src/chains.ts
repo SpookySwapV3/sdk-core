@@ -62,5 +62,6 @@ export enum NativeCurrencyName {
   FTM = 'FTM',
   EON = 'ZEN',
   BERA = 'BERA',
-  SONIC_TESNET = 'S'
+  SONIC_TESNET = 'S',
+  GOAT_TESTNET = 'BTC',
 }
