@@ -1,7 +1,7 @@
 {
   "name": "@spookyswaptestnet/sdk-core",
   "license": "MIT",
-  "version": "1.0.29-sonic001",
+  "version": "1.0.29-sonic002",
   "description": "An SDK for building applications on top of V3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
