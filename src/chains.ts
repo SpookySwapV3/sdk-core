@@ -25,6 +25,8 @@ export enum ChainId {
   SONIC = 146,
   GOAT = 2345,
   MONAD_TESTNET = 10143,
+  BERA = 80094,
+  MANTLE = 5000,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -52,6 +54,8 @@ export const SUPPORTED_CHAINS = [
   ChainId.SONIC,
   ChainId.GOAT,
   ChainId.MONAD_TESTNET,
+  ChainId.BERA,
+  ChainId.MANTLE,
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -73,4 +77,7 @@ export enum NativeCurrencyName {
   SONIC = 'S',
   GOAT = 'BTC',
   MONAD_TESTNET = 'MON',
+  ARBITRUM_ONE = 'ETH',
+  BASE = 'ETH',
+  MANTLE = 'MNT',
 }

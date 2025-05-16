@@ -24,7 +24,7 @@ function constructSameAddressMap(address: string, additionalNetworks: ChainId[] 
 
 export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', [
   ChainId.OPTIMISM,
-  ChainId.ARBITRUM_ONE,
+  // ChainId.ARBITRUM_ONE,
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
   ChainId.SEPOLIA
@@ -45,6 +45,11 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.SONIC_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
   [ChainId.SONIC]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
   [ChainId.MONAD_TESTNET]: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
+  [ChainId.ARBITRUM_ONE]: '0x60050E4a491b24ADF36Fe184f994dE985641c747',
+  [ChainId.BASE]: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
+  [ChainId.BERA]: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
+  [ChainId.AVALANCHE]: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
+  [ChainId.MANTLE]: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
 }
 
 export const V2_FACTORY_INIT_HASH: AddressMap = {
@@ -58,6 +63,11 @@ export const V2_FACTORY_INIT_HASH: AddressMap = {
   [ChainId.SONIC_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
   [ChainId.SONIC]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
   [ChainId.MONAD_TESTNET]: '0xd8f513f09a3daf95c6d2d45daa17b34a4a350856cb4eec316c711811af5584f3',
+  [ChainId.ARBITRUM_ONE]: '0xd8f513f09a3daf95c6d2d45daa17b34a4a350856cb4eec316c711811af5584f3',
+  [ChainId.BASE]: '0xd8f513f09a3daf95c6d2d45daa17b34a4a350856cb4eec316c711811af5584f3',
+  [ChainId.BERA]: '0xd8f513f09a3daf95c6d2d45daa17b34a4a350856cb4eec316c711811af5584f3',
+  [ChainId.AVALANCHE]: '0xd8f513f09a3daf95c6d2d45daa17b34a4a350856cb4eec316c711811af5584f3',
+  [ChainId.MANTLE]: '0xd8f513f09a3daf95c6d2d45daa17b34a4a350856cb4eec316c711811af5584f3',
 }
 
 export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
@@ -74,6 +84,11 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.SONIC_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
   [ChainId.SONIC]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
   [ChainId.MONAD_TESTNET]: '0xd2BE3aD05b57D03af232969a85076c2059Bbd93c',
+  [ChainId.ARBITRUM_ONE]: '0xA2a7F6B507aE04135B1D8A627CFe4872D8894028',
+  [ChainId.BASE]: '0xD6fFB889fe82FBCF6141A75D97B1960b67603D79',
+  [ChainId.BERA]: '0xD6fFB889fe82FBCF6141A75D97B1960b67603D79',
+  [ChainId.AVALANCHE]: '0xD6fFB889fe82FBCF6141A75D97B1960b67603D79',
+  [ChainId.MANTLE]: '0xD6fFB889fe82FBCF6141A75D97B1960b67603D79',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -94,11 +109,12 @@ const GOERLI_ADDRESSES: ChainAddresses = {
 }
 
 const OPTIMISM_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
-const ARBITRUM_ONE_ADDRESSES: ChainAddresses = {
-  ...DEFAULT_ADDRESSES,
-  multicallAddress: '0xadF885960B47eA2CD9B55E6DAc6B42b7Cb2806dB',
-  tickLensAddress: '0xbfd8137f7d1516D3ea5cA83523914859ec47F573'
-}
+// const ARBITRUM_ONE_ADDRESSES: ChainAddresses = {
+//   ...DEFAULT_ADDRESSES,
+//   multicallAddress: '0xadF885960B47eA2CD9B55E6DAc6B42b7Cb2806dB',
+//   tickLensAddress: '0xbfd8137f7d1516D3ea5cA83523914859ec47F573'
+// }
+
 const POLYGON_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
 
 // celo v3 addresses
@@ -150,27 +166,6 @@ const SEPOLIA_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x729004182cF005CEC8Bd85df140094b6aCbe8b15',
   nonfungiblePositionManagerAddress: '0x1238536071E1c677A632429e3655c799b22cDA52',
   tickLensAddress: '0xd7f33bcdb21b359c8ee6f0251d30e94832baad07'
-}
-
-// Avalanche v3 addresses
-const AVALANCHE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD',
-  multicallAddress: '0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2',
-  quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F',
-  v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97',
-  nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B',
-  tickLensAddress: '0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950',
-  swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE'
-}
-
-const BASE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x33128a8fC17869897dcE68Ed026d694621f6FDfD',
-  multicallAddress: '0x091e99cb1C49331a94dD62755D168E941AbD0693',
-  quoterAddress: '0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a',
-  v3MigratorAddress: '0x23cF10b1ee3AdfCA73B0eF17C07F7577e7ACd2d7',
-  nonfungiblePositionManagerAddress: '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1',
-  tickLensAddress: '0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d',
-  swapRouter02Address: '0x2626664c2603336E57B271c5C0b26F421741e481'
 }
 
 // Base Goerli v3 addresses
@@ -323,6 +318,61 @@ const MONAD_TESTNET_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '0x19eEeeb4e6e1643A9b60e180604e1ECA68d54C57',
 }
 
+const ARBITRUM_ONE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xA2a7F6B507aE04135B1D8A627CFe4872D8894028',
+  multicallAddress: '0x2327f9A037C8C44744dCD6D135633DA466576D72',
+  tickLensAddress: '0xa58536246beEB4E68C84caFFC07C87aB5F9f7A16',
+  nonfungiblePositionManagerAddress: '0x19eEeeb4e6e1643A9b60e180604e1ECA68d54C57',
+  v3MigratorAddress: '0xaa155F0Ee6855D0227BBCFa218930196ef09910B',
+  quoterAddress: '0xd2BE3aD05b57D03af232969a85076c2059Bbd93c',
+  swapRouter02Address: '0xaB8EDD6ADfd8c281e96B92058d6253F1DB36C3bC',
+  v1MixedRouteQuoterAddress: '0x2F38406baBfe8C70650A40633b0990923010941B',
+}
+
+const BASE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xbaA8353CC9d02733eF12f9556ed999521f6E554c',
+  multicallAddress: '0x4237D0E559237AC718890EbC7698E5525DB48238',
+  tickLensAddress: '0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2',
+  nonfungiblePositionManagerAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
+  v3MigratorAddress: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  quoterAddress: '0x4c5657b3c43b23E8C04724A3e3da9Ea05ae0712C',
+  swapRouter02Address: '0xDfb63F08a4bF4dE6bC0f169c03febcB3C7B6Ec61',
+  v1MixedRouteQuoterAddress: '0xa1834eB91Fed1af3B0Fc89066099b6Ede216d261',
+}
+
+const BERA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xbaA8353CC9d02733eF12f9556ed999521f6E554c',
+  multicallAddress: '0x4237D0E559237AC718890EbC7698E5525DB48238',
+  tickLensAddress: '0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2',
+  nonfungiblePositionManagerAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
+  v3MigratorAddress: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  quoterAddress: '0x4c5657b3c43b23E8C04724A3e3da9Ea05ae0712C',
+  swapRouter02Address: '0xDfb63F08a4bF4dE6bC0f169c03febcB3C7B6Ec61',
+  v1MixedRouteQuoterAddress: '0xa1834eB91Fed1af3B0Fc89066099b6Ede216d261'
+}
+
+// Avalanche v3 addresses
+const AVALANCHE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x0057CB6fE6a312AC29d60256299F2De425Af734d',
+  multicallAddress: '0xaeE05d74c00c8aFCe2A39496FE22cEA3c7Adbc11',
+  tickLensAddress: '0x07F004c39b5628107860574F30902A995824f486',
+  nonfungiblePositionManagerAddress: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  v3MigratorAddress: '0x82Bc9D9096b18E672f4d864be5a0333FB6958155',
+  quoterAddress: '0xDfb63F08a4bF4dE6bC0f169c03febcB3C7B6Ec61',
+  swapRouter02Address: '0xa1834eB91Fed1af3B0Fc89066099b6Ede216d261',
+  v1MixedRouteQuoterAddress: '0x3D9c7F529005017aFD0a7fc2CF97D0baF72C5418'
+}
+
+const MANTLE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xbaA8353CC9d02733eF12f9556ed999521f6E554c',
+  multicallAddress: '0x4237D0E559237AC718890EbC7698E5525DB48238',
+  tickLensAddress: '0xb39d21718e24DE36fDD8c5C73e928B5EFF33d6C2',
+  nonfungiblePositionManagerAddress: '0xB9507f2ED171D52c5c2EFaeAbdE440d264504A92',
+  v3MigratorAddress: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  quoterAddress: '0x4c5657b3c43b23E8C04724A3e3da9Ea05ae0712C',
+  swapRouter02Address: '0xDfb63F08a4bF4dE6bC0f169c03febcB3C7B6Ec61',
+  v1MixedRouteQuoterAddress: '0xa1834eB91Fed1af3B0Fc89066099b6Ede216d261',
+}
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
@@ -349,6 +399,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SONIC]: SONIC_ADDRESSES,
   [ChainId.GOAT]: GOAT_ADDRESSES,
   [ChainId.MONAD_TESTNET]: MONAD_TESTNET_ADDRESSES,
+  [ChainId.BERA]: BERA_ADDRESSES,
+  [ChainId.MANTLE]: MANTLE_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
