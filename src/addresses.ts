@@ -45,6 +45,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.SONIC_TESTNET]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
   [ChainId.SONIC]: '0xEE4bC42157cf65291Ba2FE839AE127e3Cc76f741',
   [ChainId.MONAD_TESTNET]: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
+  [ChainId.MONAD]: '0x7928a2c48754501f3a8064765ECaE541daE5c3E6',
 }
 
 export const V2_FACTORY_INIT_HASH: AddressMap = {
@@ -58,6 +59,7 @@ export const V2_FACTORY_INIT_HASH: AddressMap = {
   [ChainId.SONIC_TESTNET]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
   [ChainId.SONIC]: '0xc0a4478c7d7a8e51439185380bd1914dea14c12086db861090a5dc8d11b4e95b',
   [ChainId.MONAD_TESTNET]: '0xd8f513f09a3daf95c6d2d45daa17b34a4a350856cb4eec316c711811af5584f3',
+  [ChainId.MONAD]: '0x7c1c5f9f29ff8217b7ad18e836d629ead2c129d10da2fad7550fccf6e893ecbb',
 }
 
 export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
@@ -74,6 +76,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.SONIC_TESTNET]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
   [ChainId.SONIC]: '0xa6AD18C2aC47803E193F75c3677b14BF19B94883',
   [ChainId.MONAD_TESTNET]: '0xd2BE3aD05b57D03af232969a85076c2059Bbd93c',
+  [ChainId.MONAD]: '0xbaA8353CC9d02733eF12f9556ed999521f6E554c',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -323,6 +326,16 @@ const MONAD_TESTNET_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '0x19eEeeb4e6e1643A9b60e180604e1ECA68d54C57',
 }
 
+const MONAD_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x0057CB6fE6a312AC29d60256299F2De425Af734d',
+  multicallAddress: '0xaeE05d74c00c8aFCe2A39496FE22cEA3c7Adbc11',
+  tickLensAddress: '0x07F004c39b5628107860574F30902A995824f486',
+  nonfungiblePositionManagerAddress: '0x40F70B72796C30f355dF859B2c8F94f18c38AdF8',
+  v3MigratorAddress: '0x82Bc9D9096b18E672f4d864be5a0333FB6958155',
+  quoterAddress: '0xDfb63F08a4bF4dE6bC0f169c03febcB3C7B6Ec61',
+  swapRouter02Address: '0xa1834eB91Fed1af3B0Fc89066099b6Ede216d261',
+  v1MixedRouteQuoterAddress: '0x3D9c7F529005017aFD0a7fc2CF97D0baF72C5418',
+}
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
@@ -349,6 +362,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SONIC]: SONIC_ADDRESSES,
   [ChainId.GOAT]: GOAT_ADDRESSES,
   [ChainId.MONAD_TESTNET]: MONAD_TESTNET_ADDRESSES,
+  [ChainId.MONAD]: MONAD_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
